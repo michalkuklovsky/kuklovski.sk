@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP | Michal & Miriam</title>
+  <meta name="description" content="RSVP for Michal and Miriam's wedding.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">M & M</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="story.html" class="nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="rsvp.html" class="nav-link active">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section container" style="margin-top: var(--nav-height);">
+    <div class="text-center animate-on-scroll">
+      <span class="subtitle">Be our guest</span>
+      <h2>RSVP</h2>
+      <p style="margin-bottom: 3rem;">Please respond by September 1st, 2026. We hope you can make it!</p>
+    </div>
+
+    <div class="form-container animate-on-scroll">
+      <form id="rsvpForm">
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Will you attend?</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="attending" value="yes" required> Joyfully Accepts
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="attending" value="no" required> Regretfully Declines
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="guests" class="form-label">Number of Guests (including yourself)</label>
+          <select id="guests" name="guests" class="form-control" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dietary" class="form-label">Dietary Restrictions</label>
+          <textarea id="dietary" name="dietary" class="form-control" placeholder="E.g., Vegetarian, Vegan, Gluten-free..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="song" class="form-label">Song Request</label>
+          <input type="text" id="song" name="song" class="form-control" placeholder="I'll dance if you play...">
+        </div>
+
+        <div class="text-center" style="margin-top: 2rem;">
+          <button type="submit" class="btn btn-accent" style="width: 100%;">Send RSVP</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2>M & M</h2>
+    <p>October 24, 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

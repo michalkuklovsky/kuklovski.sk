@@ -1,2 +1,87 @@
-Hello world
-i love Misko
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michal & Miriam | Our Wedding</title>
+  <meta name="description" content="Join us to celebrate the wedding of Michal and Miriam. Find all details about the ceremony and dinner.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">M & M</a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="story.html" class="nav-link">Our Story</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="rsvp.html" class="nav-link">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1920&q=80" alt="Wedding Couple" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="subtitle" style="color: white;">We are getting married</span>
+      <h1>Michal & Miriam</h1>
+      <p class="hero-date">October 24, 2026</p>
+      <a href="rsvp.html" class="btn btn-accent">RSVP Now</a>
+    </div>
+  </header>
+
+  <section class="section container">
+    <div class="text-center animate-on-scroll">
+      <span class="subtitle">The Details</span>
+      <h2>When & Where</h2>
+      <p style="max-width: 600px; margin: 0 auto;">We can't wait to celebrate our special day with you. Here are all the details you need to know for the ceremony and dinner.</p>
+    </div>
+
+    <div class="info-grid animate-on-scroll">
+      <!-- Ceremony -->
+      <div class="info-card">
+        <div class="icon-wrapper">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        </div>
+        <h3>The Ceremony</h3>
+        <p><strong>14:00 PM</strong><br>St. Patrick's Cathedral<br>123 Wedding Avenue, City</p>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">Please arrive 30 minutes early. Parking is available behind the church.</p>
+      </div>
+
+      <!-- Dinner -->
+      <div class="info-card">
+        <div class="icon-wrapper">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"></path></svg>
+        </div>
+        <h3>The Dinner & Party</h3>
+        <p><strong>18:00 PM</strong><br>The Grand Manor<br>456 Celebration Lane, City</p>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">Cocktail hour starts at 17:00 PM. Dinner will be served at 18:30 PM. Dancing to follow!</p>
+      </div>
+      
+      <!-- Dress Code -->
+      <div class="info-card">
+        <div class="icon-wrapper">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+        </div>
+        <h3>Dress Code</h3>
+        <p><strong>Formal / Black-Tie Optional</strong></p>
+        <p style="font-size: 0.9rem; margin-top: 1rem;">We'd love to see you dressed up! The color palette of the wedding is green and terracotta.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2>M & M</h2>
+    <p>October 24, 2026</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
