@@ -31,14 +31,14 @@
     <div class="text-center animate-on-scroll">
       <span class="subtitle">Buď naším hosťom</span>
       <h2>Potvrdenie účasti</h2>
-      <p style="margin-bottom: 3rem;">Odpovedzte, prosím, do 1. septembra 2026. Dúfame, že prídete!</p>
+      <p style="margin-bottom: 3rem;">Odpovedzte, prosím, do 22. augusta 2026. Dúfame, že prídete!</p>
     </div>
 
     <div class="form-container animate-on-scroll">
       <form id="rsvpForm">
         <div class="form-group">
-          <label for="fullName" class="form-label">Celé meno</label>
-          <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Meno Priezvisko">
+          <label for="fullName" class="form-label">Celé meno / rodina</label>
+          <input type="text" id="fullName" name="fullName" class="form-control" required placeholder="Meno Priezvisko alebo Rodinné meno">
         </div>
 
         <div class="form-group">
@@ -54,24 +54,34 @@
         </div>
 
         <div class="form-group">
-          <label for="guests" class="form-label">Počet hostí (vrátane vás)</label>
+          <label for="guests" class="form-label">Počet (ak ide rodina)</label>
           <select id="guests" name="guests" class="form-control" required>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
           </select>
         </div>
 
         <div class="form-group">
           <label for="dietary" class="form-label">Stravovacie obmedzenia</label>
-          <textarea id="dietary" name="dietary" class="form-control" placeholder="Napr. vegetarián, vegán, bezlepkové..."></textarea>
+          <textarea id="dietary" name="dietary" class="form-control" placeholder="Ak ide rodina, uveďte konkrétne osoby a ich obmedzenia(bezlepkové, bezlaktózové,..)"></textarea>
         </div>
 
         <div class="form-group">
-          <label for="song" class="form-label">Pieseň</label>
-          <input type="text" id="song" name="song" class="form-control" placeholder="Zatancujem si, ak zahráte...">
+          <label class="form-label">Potrebujete ubytovanie?</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="accommodation" value="yes" required> Áno
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="accommodation" value="no" required> Nie
+            </label>
+          </div>
         </div>
 
         <div class="text-center" style="margin-top: 2rem;">
